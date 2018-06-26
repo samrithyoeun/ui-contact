@@ -1,0 +1,6 @@
+framework module Pods_ui_contact {
+  umbrella header "Pods-ui-contact-umbrella.h"
+
+  export *
+  module * { export * }
+}

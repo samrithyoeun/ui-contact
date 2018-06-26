@@ -1,0 +1,16 @@
+PODS:
+  - Device (3.1.0)
+
+DEPENDENCIES:
+  - Device (~> 3.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Device
+
+SPEC CHECKSUMS:
+  Device: 8a21a61f5f938a12dadd44d82287996081b6919b
+
+PODFILE CHECKSUM: 6f97b26f2d7064a2b0768938cea00ec91dba3b11
+
+COCOAPODS: 1.5.3

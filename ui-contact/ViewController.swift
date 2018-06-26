@@ -7,19 +7,32 @@
 //
 
 import UIKit
+import Device
 
 class ViewController: UIViewController {
-
+   
+    @IBOutlet weak var connectionView: UIView!
+    @IBOutlet weak var introductionView: UIView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        connectionView.decorate()
+        introductionView.decorate()
+        switch Device.size(){
+        case .screen5_8Inch :
+            scrollView.isScrollEnabled = false
+        default:
+            scrollView.isScrollEnabled = true
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 
+extension UIView{
+    func decorate(){
+        layer.borderColor = UIColor.white.cgColor
+        layer.cornerRadius = 10
+        layer.borderWidth = 1.0
+    }
+}
